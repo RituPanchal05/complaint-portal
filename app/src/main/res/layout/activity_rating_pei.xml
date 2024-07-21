@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Box with colored squares and text -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingClass" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:padding="15dp">
+
+        <!-- First box with description -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- First colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#888888" />
+
+            <!-- Text for first box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Academic"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <!-- Second box with description -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#0000fe" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrative"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#fe0000" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infrastructure"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#00FF01" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compus services"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#00FFff" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extracurricular"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#FFFF00" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty and staff"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#7d3c98" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#571845" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cleanliness"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#FF5733" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social and community"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="#009798" />
+
+            <!-- Text for second box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Second colored square -->
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

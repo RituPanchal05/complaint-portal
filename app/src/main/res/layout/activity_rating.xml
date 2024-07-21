@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--1st card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Academic"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="280dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Include academin performance and teaching quality"
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/academic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:min="1"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:padding="8dp"
+                    android:src="@drawable/education" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--2nd card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Administrative"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Include admimistrative services, process including registration and financial matters "
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/administrative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/administrative" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--3rd card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Infratructure"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes physical campus conditions and maintenance"
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/infra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/infrastructure" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--4th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Campus services"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Include services suggest liabrary, IT, housing and canteen."
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/campus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/college" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--5th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Extracurricular Activities"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes services related to sports, clubs and campus evets"
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/extracurricular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:padding="8dp"
+                    android:src="@drawable/extracurricular" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--6th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Faculty and staff conduct"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes proffesionalism and interaction with faculty  and staff"
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/faculty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/training" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--7th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Technology and online services"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes experience with online platform , portals and connectivity"
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/tech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/tech" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--8th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Clenliness and Maintenance"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes campus facilities of class rooms, restrrom, common areas and outdoor spaces."
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/cleanliness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/cleanliness" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--9th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Social and community issues"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes enegagement  with community involvment, social and cultural events."
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/social"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/partners" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!--10th card-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:textColor="@color/black"
+                            android:text="Parking"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="Includes convenience and accesibility of transportation and parking facilities."
+                            android:textColor="#5E5E5E"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/parking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:min="1"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:transformPivotX="1dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/parking" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addRating"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="submitStars"
+                    android:text="Save"
+                    android:layout_marginRight="20dp"/>
+
+                <Button
+                    android:id="@+id/graphsButton"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="openPieChartActivity"
+                    android:text="Analysis" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

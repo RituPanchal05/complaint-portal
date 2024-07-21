@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:text="Create new account"
+            android:textColor="#970B000B"
+            android:textSize="40dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="2dp"
+        android:textAlignment="center"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="371dp"
+            android:layout_height="526dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="8dp"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/reg_Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/ConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:drawablePadding="8dp"
+                android:hint=" confirm Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/dep_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:drawablePadding="8dp"
+                android:hint="department Id"
+                android:padding="8dp"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#6750A2"
+
+
+                android:text="Sign Up"
+                android:textSize="18dp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="Already have an account? Log in"
+                android:textAlignment="center"
+                android:textColor="#6750A3"
+
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
